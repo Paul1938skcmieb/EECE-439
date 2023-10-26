@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Contacts</title>
+</head>
+<body>
+    <h1>All Contacts</h1>
+    <ul>
+        {% for contact in contacts %}
+            <li>{{ contact.name }} - {{ contact.email }} - {{ contact.date_joined }} - {{ contact.date_expired }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
